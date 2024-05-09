@@ -11,7 +11,9 @@ openai-whisper = {git = "https://github.com/openai/whisper.git"}
 flask = "^3.0.3"
 pytelegrambotapi = "^4.17.0"
 
-
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+pyh2r-start = "pyh2r.main:main"
